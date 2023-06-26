@@ -1,0 +1,10 @@
+.artists-container {
+  height: 70%;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

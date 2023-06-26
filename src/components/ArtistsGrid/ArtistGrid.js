@@ -1,20 +1,11 @@
 import { useEffect, useState } from 'react'
 import './ArtistGrid.css'
 import getArtistAPICalls from '../../apiCalls'
+import ArtistCard from '../ArtistCard/ArtistCard'
 
-const ArtistsGrid = () => {
-const [artists, setArtists] = useState([])
+const ArtistsGrid = ({artists}) => {
 
-useEffect(() => {
-  const getData = () => {
-    getArtistAPICalls('artists')
-    .then((data) => setArtists(data.artists))
-    .catch((error) => console.log("error"))
-  }
-  getData()
-}, [])
-
-const artistCards = props.artists.map(artist => {
+const artistCards = artists.map(artist => {
   return(
     <ArtistCard 
       id={artist.id}
@@ -34,3 +25,5 @@ const artistCards = props.artists.map(artist => {
     </div>
   )
 }
+
+export default ArtistsGrid

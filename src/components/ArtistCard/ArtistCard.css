@@ -1,0 +1,8 @@
+.artist-card {
+  height: 25%;
+  width: 30%;
+  border: black 2px solid;
+  text-decoration: none;
+  color: brown;
+  margin: 1%;
+}

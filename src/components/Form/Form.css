@@ -1,0 +1,33 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 5%;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.selects {
+  width: 30%;
+  height: 30%;
+  text-align: center;
+  border: 5px brown solid;
+}
+
+@media screen and (max-width: 968px) {
+}
+
+@media screen and (max-width: 968px) {
+  .logo {
+    width: 40%
+  }
+  .selects{
+    width: 50%;
+  }
+}
